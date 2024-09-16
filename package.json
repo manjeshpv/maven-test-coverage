@@ -1,0 +1,17 @@
+{
+  "name": "maven-test-coverage",
+  "version": "1.0.0",
+  "main": "source.js",
+  "scripts": {
+    "test": "mocha --reporter=lcov *.test.js",
+    "coverage": "nyc  --reporter=lcov mocha *.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "lcov": "^1.16.0",
+    "mocha": "^10.7.3",
+    "nyc": "^17.0.0"
+  }
+}
